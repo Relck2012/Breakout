@@ -1,0 +1,24 @@
+<head>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <form id="form" style="height: 250px; width: 440px; display: inline-block;" action="../php/main.php" method="POST">
+        <div class="content-wrapper form-info-content" style="height: 100%;">
+            <input type="text" name="summary" placeholder="Summary" autocomplete="off" style="margin: 10px 0; width: 250px; display: block;">
+            <textarea type="text" name="description" placeholder="Description" style="width: 250px; height: 200px; display: block;"></textarea>
+        </div> 
+        <div class="content-wrapper form-info-content" style="height: 100%; position: relative" >
+            <select type="text" name="department" style="display: block; margin: 10px 0px;">
+                <option value="">Choose Department</option>
+                <option value="Installation Services">Installation Services</option>
+                <option value="UCC">UCC</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Physical Security">Physical Security</option>
+            </select>
+            <div style="text-align: right;">
+                <input type="number" name="rate" placeholder="Rate" autocomplete="off" style="width: 50px; margin: 0;">
+            </div>
+            <div style="position: absolute; bottom: 10px; right: 15px;">
+                <button type="submit" name="dbFunction"  value="createRate" style="width: 75px">Submit</button>
+            </div>
+        </div> 
+    </form>

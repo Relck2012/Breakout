@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/breakout.css">
+        <link rel="stylesheet" href="css/search.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/searchProduct.js"></script>
+
+    </head>
+    <body>
+        <div id="forground">
+            <div id="pop-up-wrapper">
+                    <div onclick="closeForm()" style="margin: 0; border-bottom: 1px solid black; padding: 5px 13px 5px 0; display: block; text-align: right;">X</div>
+            </div>
+        </div>
+        <div class="content-wrapper" style="white-space: nowrap;">
+            <div id="addTo-db-controls">
+                <ul>
+                    <li onclick="openForm('new-service')">Create New Service</li>
+                    <li onclick="openForm('new-product')">Create New Product</li>
+                    <li onclick="openForm('new-tool')">Create New Tool</li>
+                    <li onclick="openForm('new-rate')">Create New Rate</li>
+                </ul>
+            </div>
+            <div id="breakout-breakdown">
+                <div id="service">
+                    <p onclick="dropDown('service')">Services<span style="font-size: 12px;">   &#9660</span></p>
+                    <ul id="services">
+                        <li onclick="search(event, 'service_search', 'services');">Add Services</li>
+                    </ul>
+                </div>
+                <div id="product">
+                        <p onclick="dropDown('product')">Products<span style="font-size: 12px;">   &#9660</span></p>
+                        <ul id="products">
+                            <li onclick="search(event, 'product_search', 'products');">Add Product</li>
+                        </ul> 
+                </div>
+                <div id="tool">
+                        <p onclick="dropDown('tool')">Tools<span style="font-size: 12px;">   &#9660</span></p>
+                        <ul id="tools">
+                            <li onclick="search(event, 'tool_search', 'tools');">Add Tools</li>
+                        </ul>
+                </div>
+                <div id="resource">
+                        <p onclick="dropDown('resource')">Resource<span style="font-size: 12px;">   &#9660</span></p>
+                        <ul id="install-resource">
+                            <li onclick="search(event, 'resource_search', 'install-resource');">Add Installation Resources</li>
+                        </ul>
+                        <ul id="config-resource">
+                            <li onclick="search(event, 'resource_search', 'config-resource');">Add Configuration Resources</li>
+                        </ul>
+                </div>
+            </div>
+            <div id="search-box">
+
+            </div>
+        </div>    
+    </body>
+</html>

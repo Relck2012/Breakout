@@ -1,0 +1,52 @@
+#service, #product, #tool, #resource{
+    border: 1px solid black;
+    height: 40px;
+    overflow: hidden;
+}
+
+#breakout-breakdown .active{
+    height: auto !important;
+}
+
+#breakout-breakdown ul{
+    padding: 0;
+}
+
+#breakout-breakdown li{
+    border: 1px solid black;
+}
+
+#breakout-breakdown ul li:first-child{
+    margin: 0 20px; 
+    padding: 10px 0;
+}
+
+#breakout-breakdown ul li:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#search-box{
+    width:  797px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    height: auto;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+#search-box #model_num{
+    width: calc(25% - 8px);
+}
+#search-box #rate{
+    width: calc(10% - 4px);
+}
+#search-box #tool_description{
+    width: calc(70% - 21px);
+}
+
+#search-box #result-feilds{
+    margin-top: 25px;
+}
